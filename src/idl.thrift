@@ -49,7 +49,7 @@ service superquadricGrasping_IDL
     *@param yes or no 
     *@return true/false on success/failure
     */
-    bool lift_object(1:string lift_or_not);
+    bool set_lift_object(1:string lift_or_not);
 
     /**
     * Say if the robot is going to lift the object or not 
@@ -68,7 +68,7 @@ service superquadricGrasping_IDL
     *@param power or precision, for respectively power or precision grasp
     *@return true/false on success/failure
     */
-    bool grasping_method(1:string lift_or_not);
+    bool set_grasping_method(1:string lift_or_not);
 
     /**
     * Say the kind of selected grasping:
@@ -87,7 +87,7 @@ service superquadricGrasping_IDL
     *@param yes or no
     *@return true/false on success/failure
     */
-    bool calibrate_cam(1:string calib_or_not);
+    bool set_calibrate_cam(1:string calib_or_not);
 
     /**
     * Say the name of the object
@@ -120,14 +120,14 @@ service superquadricGrasping_IDL
     *@param the distance
     *@return true/false on success/failure
     */
-    bool trajectory_distance_x(1:double dis);
+    bool set_trajectory_distance_x(1:double dis);
 
     /**
     * Choose the distance on z axis for approach
     *@param the distance
     *@return true/false on success/failure
     */
-    bool trajectory_distance_z(1:double dis);
+    bool set_trajectory_distance_z(1:double dis);
 
     /**
     * Get the distance on x axis for approach
@@ -146,7 +146,7 @@ service superquadricGrasping_IDL
     *@param displacement value (as a Vector)
     *@return true/false on success/failure
     */
-    bool hand_displacement(1:Vector hand);
+    bool set_hand_displacement(1:Vector hand);
 
     /**
     * Get hand displacement for grasping
@@ -175,9 +175,9 @@ service superquadricGrasping_IDL
 
     /**
     * Compute, show and send pose
-    *@return computed poses
+    *@return true
     */
-    list<double> compute_pose();
+    bool compute_pose();
 
     /** Set parameters of trajectory computation and 
     * poses reaching
