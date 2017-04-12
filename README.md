@@ -52,5 +52,7 @@ and is released under the terms of the GPL v2.0 or later. See the file LICENSE f
 
 [![DOI](https://zenodo.org/badge/54572419.svg)](https://zenodo.org/badge/latestdoi/54572419)
 
+This work is now developing in the repository: [robotology/superquadric-grasping](https://github.com/robotology/superquadric-grasping).
+
 
 
