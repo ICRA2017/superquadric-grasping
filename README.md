@@ -1,4 +1,7 @@
 # superquadric-grasping
+
+[![Docker Build Status](https://img.shields.io/docker/build/icra2017/superquadric-grasping.svg)](https://hub.docker.com/r/icra2017/superquadric-grasping/)
+
 Framework for computing a good grasping pose, by exploiting superquadric models for the object and the robot hand.
 
 ## Theoretical background
